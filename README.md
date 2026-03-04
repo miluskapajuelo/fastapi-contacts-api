@@ -83,12 +83,14 @@ http://127.0.0.1:8000/docs
 ## Example API Endpoint
 POST /api/contacts
 
+```json
 {
   "first_name": "Milu",
   "last_name": "Pajuelo",
   "email": "miluspajuelo@gmail.com",
   "phone_number": "2020020202"
 }
+```
 
 ## Inspect the Database
 docker exec -it tests-db-1 psql -U myuser -d fastapi_db
@@ -96,9 +98,10 @@ docker exec -it tests-db-1 psql -U myuser -d fastapi_db
 \d contacts
 SELECT * FROM contacts;
 Example output: 
- id | first_name | last_name | email                 | phone_number | date_created
-----+------------+-----------+-----------------------+--------------+--------------------------
- 1  | Milu       | Pajuelo   | miluspajuelo@gmail.com| 2020020202   | 2026-03-04 17:18:17+00
+
+| id | first_name | last_name | email                   | phone_number | date_created           |
+|----|------------|-----------|-------------------------|--------------|------------------------|
+| 1  | Milu       | Pajuelo   | miluspajuelo@gmail.com  | 2020020202   | 2026-03-04 17:18:17+00 |
 
  \q
 
@@ -109,6 +112,7 @@ pytest -q
 6 passed, 3 warnings in 0.15s
 
 ## Ports used
+
 | Service    | Port |
 | ---------- | ---- |
 | PostgreSQL | 5432 |
