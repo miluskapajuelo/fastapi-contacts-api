@@ -24,21 +24,21 @@ A RESTful Contacts API built with FastAPI, PostgreSQL, SQLAlchemy, and Docker. I
 
 fastapi-contacts-api
 │
-├── test
-│   ├── conftest.py
-│   ├── docker-compose.yml
-│   ├── test_contacts_api.py
+├── main.py                # FastAPI application entry point
+├── database.py            # Database engine and session configuration
+├── models.py              # SQLAlchemy database models
+├── schemas.py             # Pydantic schemas for request/response validation
+├── services.py            # Business logic and database operations
 │
-├── database.py
-├── main.py
-├── models.py
-├── schemas.py
-├── services.py
+├── test/
+│   ├── docker-compose.yml # PostgreSQL containers for development and testing
+│   ├── conftest.py        # Pytest fixtures and test configuration
+│   ├── test_contacts_api.py # API endpoint tests
 │
-├── requirements.txt
-├── .env
-├── .gitignore
-└── README.md
+├── requirements.txt       # Python dependencies
+├── .env                   # Environment variables (database connection)
+├── .gitignore             # Git ignored files
+└── README.md              # Project documentation
 
 ## Features
 
