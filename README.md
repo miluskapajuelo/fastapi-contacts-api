@@ -22,6 +22,9 @@ A RESTful Contacts API built with FastAPI, PostgreSQL, SQLAlchemy, and Docker. I
 
 ## Project Structure
 
+## Project Structure
+
+```text
 fastapi-contacts-api
 │
 ├── main.py                # FastAPI application entry point
@@ -36,9 +39,10 @@ fastapi-contacts-api
 │   ├── test_contacts_api.py # API endpoint tests
 │
 ├── requirements.txt       # Python dependencies
-├── .env                   # Environment variables (database connection)
+├── .env                   # Environment variables
 ├── .gitignore             # Git ignored files
 └── README.md              # Project documentation
+```
 
 ## Features
 
