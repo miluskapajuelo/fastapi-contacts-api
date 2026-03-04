@@ -132,5 +132,6 @@ pytest -q
 
 ## Author
 Jhoselyn Miluska Pajuelo
+miluskapajuelo@gmail.com
 Software Engineer focused on building scalable backend systems and developer tools.
 
